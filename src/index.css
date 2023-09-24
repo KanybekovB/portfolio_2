@@ -1,69 +1,361 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a {
+  text-decoration: none;
 }
-
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  background-color: #626262;
+  color: white;
+  border: none;
 }
-button:hover {
-  border-color: #646cff;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 27px;
+  padding: 42px 72px 0 72px;
+  & > a {
+    color:black;
+    font-size: 20px;
+  }
+  & ul > li > a {
+    font-size: 16px;
+    color: #000000;
+  }
+  & div {
+    display: flex;
+    gap: 33px;
+  }
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+h2 {
+  font-size: 89px;
+  font-weight: 500;
+  width: 487px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -120px;
+  left: 112px;
+}
+p {
+  margin: 0;
+}
+.container {
+  padding: 0 146.5px;
+}
+
+.goldBlock {
+  display: flex;
+  gap: 149px;
+  & h4 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    width: 437px;
   }
-  a:hover {
-    color: #747bff;
+
+  & .goldInfo {
+    color: #6a6a6a;
+    font-size: 14px;
+    margin: 0;
+    width: 391px;
+    line-height: 32px;
   }
-  button {
-    background-color: #f9f9f9;
+  & .goldBlockInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+  & .sizePrice {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  & .addBtn {
+    font-size: 16px;
+    height: 55px;
+    width: 166px;
+  }
+  & .price {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  & .size {
+    display: flex;
+    flex-direction: column;
+    width: 92px;
+    & p {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    & .size_block {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+  }
+  & .btnPrice {
+    display: flex;
+    gap: 68px;
+    align-items: center;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  & .goldBlockInfoPosition {
+    margin-top: 67px;
+  }
+}
+
+.goldBlock2 {
+  margin-top: 82px;
+}
+.shopContainer {
+  padding: 156px 181px 224px 181px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  & .shopInfo {
+    display: flex;
+    gap: 99px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 55px;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        & > span {
+          font-size: 26px;
+        }
+        & > p {
+          margin: 0;
+          color: #6a6a6a;
+          line-height: 32px;
+          font-size: 14px;
+        }
+      }
+    }
+    & h4 {
+      font-weight: 500;
+      font-size: 48px;
+      margin: 0;
+    }
+  }
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  gap: 79px;
+  & span {
+    font-size: 36px;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.emailBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+  & b {
+    font-size: 52px;
+    font-weight: 600;
+  }
+  & > div {
+    display: flex;
+    & .btn {
+      width: 197px;
+      height: 82px;
+    }
+    & input {
+      padding: 29.5px 21px;
+      font-size: 20px;
+      border: none;
+      background-color: #fff8ed;
+    }
+  }
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 154px;
+  & h4 {
+    font-size: 52px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  & > div {
+    display: flex;
+    gap: 86px;
+    & div {
+      display: flex;
+      flex-direction: column;
+      & div {
+        padding: 26px 10.5px 0 10.5px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        & span {
+          font-size: 20px;
+        }
+        & p {
+          line-height: 32px;
+          color: #6a6a6a;
+        }
+      }
+    }
+  }
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 138.5px;
+  margin-top: 93px;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    & span {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      gap: 12px;
+      & a {
+        color: #6a6a6a;
+      }
+    }
+    & p {
+      font-size: 16px;
+      width: 274px;
+      color: #6a6a6a;
+    }
+    & > .footerText {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+    }
+    & > .footerSvg {
+      display: flex;
+      gap: 26px;
+    }
+  }
+}
+
+.footerEnd {
+  padding: 21.5px 555px;
+  background-color: #5b5b5b;
+  margin-top: 58px;
+  & span {
+    color: #e3e3e3;
+    font-size: 16px;
+  }
+}
+
+.main {
+  height: 1048px;
+  & button {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    & a {
+      color: #3e3e3e;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+  .secondBlockMain {
+    position: relative;
+    top: -670px;
+    left: 830px;
+    width: 615px;
+    & .story {
+
+      & p {
+        color: #6a6a6a;
+        width: 429px;
+        line-height: 32px;
+        margin-top: 23px;
+      }
+      & h3 {
+        font-size: 34px;
+        font-weight: 500;
+        width: 162px;
+        margin: 0;
+      }
+    }
+    & .playImg {
+      display: flex;
+      position: relative;
+      left: -85px;
+      & .play {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        height: 63px;
+        top: 50%;
+        gap: 19px;
+        & span {
+          & a {
+            text-decoration: underline;
+            color: #3E3E3E;
+          }
+        }
+      }
+    }
+  }
+  .ore {
+    position: relative;
+    left: 112px;
+    display: flex;
+    gap: 53px;
+    top: -30px;
+    width: 415px;
+    & .oreInfo {
+      & span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      & p {
+        font-size: 14px;
+        margin-top: 1;
+        margin-top: 15px;
+        width: 180px;
+      }
+    }
   }
 }
